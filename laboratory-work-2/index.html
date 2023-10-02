@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            margin: 50px auto;
+            border: 2px solid black;
+            table-layout: fixed;
+        }
+        tr:first-child {
+            background-color: #108f8f;
+        }
+        tr:nth-child(2) {
+            background-color: #f5f510;
+        }
+        td {
+            padding: 5px;
+            text-align: center;
+            border: 2px solid black;
+        }
+        tr {
+            height: 40px;
+        }
+        tr:hover td {
+            background-color: inherit;
+        }
+        tr:first-child:hover td {
+            background-color: #f5f510;
+        }
+        tr:nth-child(2):hover td {
+            background-color: #108f8f;
+        }
+    </style>
+</head>
+<body>
+
+<div class="task-1">
+    <table>
+        <tr class="first-row">
+            <td colspan="1"></td>
+            <td colspan="1"></td>
+            <td colspan="2" rowspan="2">Mudryk</td>
+            <td colspan="2">Dmytro</td>
+            <td colspan="2" rowspan="2">Petrovich</td>
+        </tr>
+        <tr class="second-row">
+            <td colspan="2">IM-13</td>
+            <td colspan="2">ЛР-2 Варіант 10</td>
+        </tr>
+        <tr class="third-row">
+            <td colspan="2"></td>
+            <td colspan="6"></td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>
