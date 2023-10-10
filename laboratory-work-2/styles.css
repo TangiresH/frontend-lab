@@ -71,7 +71,7 @@ body {
     height: 90px;
     background-color: #ffffff;
     border-radius: 50%;
-    transform: translate(100px, 100px);
+    transform: translate(80px, -440px);
 }
 
 .small-circle-transform:nth-child(1) { transform: translate(91px, 215px) }
