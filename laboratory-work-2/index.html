@@ -12,12 +12,6 @@
             font-size: 28px;
             table-layout: fixed;
         }
-        tr:first-child {
-            background-color: #108f8f;
-        }
-        tr:nth-child(2) {
-            background-color: #f5f510;
-        }
         td {
             padding: 20px;
             text-align: center;
@@ -26,15 +20,22 @@
         tr {
             height: 80px;
         }
-        tr:hover td {
-            background-color: inherit;
+        tr:first-child {
+            background-color: #108f8f;
         }
         tr:first-child:hover td {
             background-color: #f5f510;
+            color: #6B5114;
+        }
+        tr:nth-child(2) {
+            background-color: #f5f510;
+            color: #6B5114;
         }
         tr:nth-child(2):hover td {
             background-color: #108f8f;
+            color: #000000;
         }
+
     </style>
     <link rel="stylesheet" href="styles.css">
 </head>
