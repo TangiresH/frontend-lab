@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    background-color: #CCEFF5;
+    margin: 0 10% 0 10%;
+    font-size: 28px;
+}
+
+.case-float {
+    background-color: #67D3E6;
+}
+
+.case-float::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.box {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.image-left {
+    float: left;
+    width: 40%;
+}
+
+.text-header-float {
+    float: left;
+    width: 60%;
+    font-size: 50px;
+    box-sizing: border-box;
+
+}
+
+.text-center-float {
+    float: left;
+    width: 60%;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+.text-bottom-float {
+    float: left;
+    width: 62%;
+    font-size: 26px;
+}
+
+.image-right {
+    width: 38%;
+    float: right;
+    margin-left: auto;
+    margin-top: auto;
+}
+
