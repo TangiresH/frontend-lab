@@ -1,56 +1,44 @@
 body {
-    display: flex;
     background-color: #CCEFF5;
-    margin: 0 10% 0 10%;
-    font-size: 28px;
+    margin: 0 auto;
+    max-width: 1450px;
 }
 
 .case-float {
     background-color: #67D3E6;
-}
-
-.case-float::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.box {
-    margin: 0 auto;
-    width: 100%;
-    align-items: center;
+    overflow: hidden;
 }
 
 .image-left {
     float: left;
-    width: 40%;
+    width: 32%;
+    height: 80%;
 }
 
 .text-header-float {
-    float: left;
-    width: 60%;
     font-size: 50px;
-    box-sizing: border-box;
-
+    width: 65%;
+    height: 5%;
+    margin-left: 35%;
 }
 
 .text-center-float {
-    float: left;
-    width: 60%;
-    box-sizing: border-box;
-    font-size: 30px;
+    font-size: 32px;
+    width: 65%;
+    height: 75%;
+    margin-left: 35%;
 }
 
 .text-bottom-float {
     float: left;
-    width: 62%;
-    font-size: 26px;
+    width: 65%;
+    height: 20%;
+    font-size: 30px;
+    clear: left;
 }
 
 .image-right {
-    width: 38%;
-    float: right;
-    margin-left: auto;
-    margin-top: auto;
+    float: left;
+    width: 35%;
+    height: 20%;
 }
-
