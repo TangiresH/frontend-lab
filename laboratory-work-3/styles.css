@@ -9,7 +9,7 @@ body {
     overflow: hidden;
 }
 
-.image-left {
+.image-left-float {
     float: left;
     width: 32%;
     height: 80%;
@@ -37,8 +37,37 @@ body {
     clear: left;
 }
 
-.image-right {
+.image-right-float {
     float: left;
     width: 35%;
     height: 20%;
+}
+
+.case-flex {
+    display: flex;
+    margin-top: 150px;
+    background-color: #67D3E6;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.content-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section {
+    flex: 2;
+    margin-left: 40px;
+}
+
+.text-header-flex {
+    flex: 2;
+    font-size: 50px;
+}
+
+.text-center-flex {
+    flex: 2;
+    font-size: 32px;
 }
