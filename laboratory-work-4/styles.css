@@ -3,5 +3,17 @@ body {
     margin: 20px;
     background-color: #F5E9C3;
     font-family: "Gill Sans", sans-serif;
-    font-size: 26px;
+    font-size: 24px;
+}
+
+.photo-city {
+    height: 450px;
+}
+
+button {
+    width: 190px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #FAD65F;
 }
