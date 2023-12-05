@@ -36,7 +36,7 @@ function getRandomColor() {
 
 function addPhotoButton() {
     const newPhoto = document.createElement('img');
-    newPhoto.src = 'https://sofitel.accor.com/destinations/imagerie/florence-city-photo-1400x787-877d_1400x788.jpg'; // Замініть на фактичний URL зображення
+    newPhoto.src = 'https://sofitel.accor.com/destinations/imagerie/florence-city-photo-1400x787-877d_1400x788.jpg';
     newPhoto.alt = 'photo';
     newPhoto.classList.add('photo-city');
     document.body.appendChild(newPhoto);
