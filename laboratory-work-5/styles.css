@@ -4,6 +4,7 @@ body {
 }
 
 .container {
+    border-radius: 20px;
     background-color: #CC6BF9;
     border: 4px solid;
     display: inline-block;
