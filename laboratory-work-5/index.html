@@ -4,27 +4,55 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script-task-1.js"></script>
 </head>
 <body>
 <div class="container">
-    <h1>Форма для заповнення даних</h1>
+    <div class="form-input">
+        <h1>Форма для заповнення даних</h1>
 
-    <p class="text-form">Введіть ваше прізвище, ім'я та по-батькові:</p>
-    <input class="input-container full-name" type="text" placeholder="Прізвище І. П."><br>
+        <p class="text-form">Введіть ваше прізвище, ім'я та по-батькові:</p>
+        <input class="input-container full-name" type="text" placeholder="Прізвище І. П."><br>
+        <p class="error-format name-error">Дані мають бути у форматі: Прізвище І.П.</p>
 
-    <p class="text-form">Введіть назву вашої групи:</p>
-    <input class="input-container group" type="text" placeholder="Навчальна група"><br>
+        <p class="text-form">Введіть назву вашої групи:</p>
+        <input class="input-container group" type="text" placeholder="Навчальна група"><br>
+        <p class="error-format group-error">Дані мають бути у форматі: ТТ-ЧЧ</p>
 
-    <p class="text-form">Введіть ваш номер телефону:</p>
-    <input class="input-container phone" type="text" placeholder="Номер телефону"><br>
+        <p class="text-form">Введіть ваш номер телефону:</p>
+        <input class="input-container phone" type="text" placeholder="Номер телефону"><br>
+        <p class="error-format phone-error">Дані мають бути у форматі: (ЧЧЧ)-ЧЧЧ-ЧЧ-ЧЧ</p>
 
-    <p class="text-form">Введіть вашу адресу:</p>
-    <input class="input-container address" type="text" placeholder="Домашня адреса"><br>
+        <p class="text-form">Введіть вашу адресу:</p>
+        <input class="input-container address" type="text" placeholder="Домашня адреса"><br>
+        <p class="error-format address-error">Дані мають бути у форматі: м. ЧЧЧЧЧЧ</p>
 
-    <p class="text-form">Введіть ваш email:</p>
-    <input class="input-container email" type="text" placeholder="Електронна пошта"><br>
 
-    <button class="button-accepted">Підтвердити</button>
+        <p class="text-form">Введіть ваш email:</p>
+        <input class="input-container email" type="text" placeholder="Електронна пошта"><br>
+        <p class="error-format email-error">Дані мають бути у форматі: тттттт@ттттт.com</p>
+
+
+        <button class="button-accepted">Підтвердити</button>
+    </div>
+
+    <div class="form-output">
+        <h1>Введені дані</h1>
+        <p class="text-form">Прізвище, ім'я та по-батькові:</p>
+        <p class="text-output name-output"></p>
+
+        <p class="text-form">Навчальна група:</p>
+        <p class="text-output group-output"></p>
+
+        <p class="text-form">Номер телефону:</p>
+        <p class="text-output phone-output"></p>
+
+        <p class="text-form">Домашня адреса:</p>
+        <p class="text-output address-output"></p>
+
+        <p class="text-form">Електронна пошта:</p>
+        <p class="text-output email-output"></p>
+    </div>
 </div>
 </body>
 </html>

@@ -3,12 +3,16 @@ body {
     justify-content: center;
 }
 
-.container {
+.form-input, .form-output {
     border-radius: 20px;
     background-color: #CC6BF9;
     border: 4px solid;
-    display: inline-block;
     width: 500px;
+    text-align: center;
+}
+
+.form-output {
+    margin-top: 50px;
     text-align: center;
 }
 
@@ -47,4 +51,23 @@ button {
 
 button:hover {
     background-color: #8E4BAD;
+}
+
+.error-format {
+    color: #B30300;
+    font-size: 21px;
+    display: none;
+}
+
+.text-output {
+    font-size: 30px;
+    background-color: #E3B7F4;
+    width: 450px;
+    height: 40px;
+    border-radius: 15px;
+    margin: auto;
+}
+
+.email-output {
+    margin-bottom: 25px;
 }
