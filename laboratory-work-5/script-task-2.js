@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     });
 
                     cell.addEventListener('dblclick', function () {
-                        // Заповнення клітинок cell-10 та cell-12
                         const cell12 = document.getElementById('cell-12');
                         cell.classList.remove('selected');
                         cell12.classList.remove('selected');
