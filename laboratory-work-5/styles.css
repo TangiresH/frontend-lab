@@ -95,3 +95,7 @@ td {
     border-top-right-radius: 20px;
     border: 4px solid;
 }
+
+td {
+    font-size: 25px;
+}

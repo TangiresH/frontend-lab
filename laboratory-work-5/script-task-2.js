@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     let currentCellNumber = 1;
-    let selectedColor = "#ff0000"; // Початковий колір
+    let selectedColor = "#ff0000";
 
-    // Організуємо цикл для нумерації клітинок
     for (let i = 1; i <= 6; i++) {
         for (let j = 1; j <= 6; j++) {
             const cellId = `cell-${currentCellNumber}`;
@@ -11,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
             if (cell) {
                 cell.textContent = currentCellNumber;
 
-                // Додаємо обробник події "mouseover" для клітинки "cell-10"
                 if (currentCellNumber === 10) {
                     cell.addEventListener('mouseover', function () {
                         if (!cell.classList.contains('selected')) {
@@ -20,10 +18,19 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     });
 
-                    // Додаємо обробник події "click" для клітинки "cell-10"
                     cell.addEventListener('click', function () {
                         cell.classList.remove('selected');
                         cell.style.backgroundColor = selectedColor;
+                    });
+
+                    cell.addEventListener('dblclick', function () {
+                        // Заповнення клітинок cell-10 та cell-12
+                        const cell12 = document.getElementById('cell-12');
+                        cell.classList.remove('selected');
+                        cell12.classList.remove('selected');
+
+                        cell.style.backgroundColor = selectedColor;
+                        cell12.style.backgroundColor = selectedColor;
                     });
                 }
 
@@ -32,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    // Функція для генерації рандомного кольору
     function generateRandomColor() {
         const red = Math.floor(Math.random() * 256);
         const green = Math.floor(Math.random() * 256);
@@ -40,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return `rgb(${red}, ${green}, ${blue})`;
     }
 
-    // Оновлюємо вибраний колір при зміні вибору в палітрі
     const colorPicker = document.getElementById('colorPicker');
     colorPicker.addEventListener('input', function () {
         selectedColor = colorPicker.value;
