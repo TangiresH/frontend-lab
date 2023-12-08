@@ -82,3 +82,16 @@ td {
     height: 78px;
     text-align: center;
 }
+
+#colorPicker {
+    width: 508px;
+    height: 60px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.container-task-2 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 4px solid;
+}
