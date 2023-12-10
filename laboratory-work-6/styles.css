@@ -1,0 +1,11 @@
+.user-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
