@@ -1,4 +1,5 @@
 const userContainer = document.getElementById('user-container');
+const apiUrl = 'https://randomuser.me/api';
 let users = [];
 
 
@@ -8,8 +9,6 @@ document.getElementById('downloadButton').addEventListener('click', fetchRandomU
 
 
 function fetchRandomUserInfo() {
-    const apiUrl = 'https://randomuser.me/api';
-
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
@@ -34,6 +33,12 @@ function fetchRandomUserInfo() {
             });
 
             displayAllUsers();
+
+            const successMessage = document.getElementById('successMessage');
+            successMessage.style.display = 'block';
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 3000);
         })
         .catch(error => {
             console.error('Error fetching random user info:', error);
@@ -47,11 +52,11 @@ function displayAllUsers() {
         const userDiv = document.createElement('div');
         userDiv.className = 'user-card';
         userDiv.innerHTML = `
-      <img src="${user.pictureUrl}" alt="User Picture">
-      <p>Cell: ${user.cell}</p>
-      <p>City: ${user.city}</p>
-      <p>Email: ${user.email}</p>
-      <p>Coordinates: ${user.coordinates}</p>
+      <img src="${user.pictureUrl}" id="picture" alt="User Picture">
+      <p class="text cell">Cell: ${user.cell}</p>
+      <p class="text city">City: ${user.city}</p>
+      <p class="text email">Email: ${user.email}</p>
+      <p class="text coordinates">Coordinates: ${user.coordinates}</p>
     `;
         userContainer.appendChild(userDiv);
     });
