@@ -1,23 +1,17 @@
+import React from 'react';
+import Header from './Header';
 import './App.css';
+import Content from "./Content"; // Вам може знадобитися створити файл стилів для вашого проекту
+import Image from "./Image";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <Header />
+            <Content />
+            <Image />
+        </div>
+    );
 }
 
 export default App;
