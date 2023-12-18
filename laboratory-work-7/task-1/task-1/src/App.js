@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './Header';
+import Header from './components/Header';
 import './App.css';
-import Content from "./Content"; // Вам може знадобитися створити файл стилів для вашого проекту
-import Image from "./Image";
+import Content from "./components/Content"; // Вам може знадобитися створити файл стилів для вашого проекту
+import Image from "./components/Image";
 
 function App() {
     return (
